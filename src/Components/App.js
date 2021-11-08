@@ -5,6 +5,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import theme from "../Components/Theme";
 import Table from "./Table";
 import Categorization from "../Components/Categorization";
+import CurrentAccount from '../Components/CurrentAccount';
 // import CategorizationTable from "../Components/CategorizationTable";
 import { Routes, Route } from "react-router-dom";
 
@@ -12,6 +13,7 @@ const App = () => {
   return (
     <>
       <NavBar />
+      <CurrentAccount />
       <div style={{ backgroundColor: "#f5f5f5", minHeight: "100vh" }}>
         <ThemeProvider theme={theme}>
           <Routes>

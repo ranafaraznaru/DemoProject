@@ -1,7 +1,7 @@
 import * as React from "react";
 import { DataGrid } from "@mui/x-data-grid";
 import MyAccount from "../Components/MyAccount";
-
+import Box from '@mui/material/Box';
 const columns = [
   { field: "id", headerName: "ID", width: 60 },
   { field: "Name", headerName: "Name", width: 200 },
@@ -115,16 +115,18 @@ const rows = [
 const Table = () => {
   return (
     <>
-      <MyAccount />
-      <div style={{ height: 400, width: "100%" }}>
-        <DataGrid
-          rows={rows}
-          columns={columns}
-          pageSize={10}
-          rowsPerPageOptions={[10]}
-          checkboxSelection
-        />
-      </div>
+      <Box pt={4}>
+        <MyAccount />
+        <div style={{ height: 400, width: "100%" }}>
+          <DataGrid
+            rows={rows}
+            columns={columns}
+            pageSize={10}
+            rowsPerPageOptions={[10]}
+            checkboxSelection
+          />
+        </div>
+      </Box>
     </>
   );
 };
