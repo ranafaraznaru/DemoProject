@@ -1,6 +1,8 @@
 import * as React from "react";
 import { DataGrid } from "@mui/x-data-grid";
 import { Box, Typography, Button } from "@mui/material";
+import { Link } from "react-router-dom";
+
 const columns = [
   { field: "Dated", headerName: "Dated", width: 200 },
   { field: "AccountNumber", headerName: "Account Number", width: 300 },
@@ -102,6 +104,8 @@ const rows = [
 const Categorization = () => {
   return (
     <>
+
+
       <Box
         sx={{
           display: "flex",
@@ -142,15 +146,18 @@ const Categorization = () => {
           </Typography>
         </Box>
         <Box>
-          <Button variant="outlined" href="#outlined-buttons">
-            See everything
-          </Button>
-          <Button variant="outlined" href="#outlined-buttons">
-            Create / Modify category
-          </Button>
-          <Button variant="outlined" href="#outlined-buttons">
-            Manage automatic assignment rule
-          </Button>
+          <Link to='/categorization/managecategories' style={{ textDecoration: 'none' }}>
+
+            <Button variant="outlined" href="#outlined-buttons">
+              See everything
+            </Button>
+            <Button variant="outlined" href="#outlined-buttons">
+              Create / Modify category
+            </Button>
+            <Button variant="outlined" href="#outlined-buttons">
+              Manage automatic assignment rule
+            </Button>
+          </Link >
         </Box>
       </Box>
 
