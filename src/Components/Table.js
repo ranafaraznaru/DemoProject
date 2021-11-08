@@ -1,5 +1,6 @@
 import * as React from "react";
 import { DataGrid } from "@mui/x-data-grid";
+import MyAccount from "../Components/MyAccount";
 
 const columns = [
   { field: "id", headerName: "ID", width: 60 },
@@ -13,8 +14,7 @@ const columns = [
     sortable: false,
     width: 300,
     valueGetter: (params) =>
-      `${params.getValue(params.id, "Name") || ""} ${
-        params.getValue(params.id, "AccountNumber") || ""
+      `${params.getValue(params.id, "Name") || ""} ${params.getValue(params.id, "AccountNumber") || ""
       }`,
   },
   {
@@ -114,15 +114,18 @@ const rows = [
 
 const Table = () => {
   return (
-    <div style={{ height: 400, width: "100%" }}>
-      <DataGrid
-        rows={rows}
-        columns={columns}
-        pageSize={10}
-        rowsPerPageOptions={[10]}
-        checkboxSelection
-      />
-    </div>
+    <>
+      <MyAccount />
+      <div style={{ height: 400, width: "100%" }}>
+        <DataGrid
+          rows={rows}
+          columns={columns}
+          pageSize={10}
+          rowsPerPageOptions={[10]}
+          checkboxSelection
+        />
+      </div>
+    </>
   );
 };
 export default Table;

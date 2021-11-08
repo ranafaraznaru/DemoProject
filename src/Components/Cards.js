@@ -3,7 +3,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import { Typography, Box } from "@mui/material";
 import { makeStyles } from "@mui/styles";
-
+import { Link } from "react-router-dom";
 const useStyles = makeStyles((theme) => ({
   Cards: {
     [theme.breakpoints.up("md")]: {
@@ -39,83 +39,19 @@ const Cards = () => {
           paddingLeft: "50px",
         }}
       >
-        <Card
-          sx={{ marginBottom: "20px", marginRight: "20px", minWidth: 250 }}
-          className={classes.customizeCard}
-        >
-          <CardContent>
-            <Typography
-              variant="h6"
-              component="div"
-              sx={{ paddingTop: "5px", color: "#637586" }}
-            >
-              My Accounts
-            </Typography>
-            <Typography
-              variant="body2"
-              component="div"
-              sx={{
-                fontWeight: "400",
-                color: "#798692",
-                lineHeight: "1.5",
-                fontSize: "17px",
-              }}
-            >
-              Pay
-            </Typography>
-            <Box sx={{ float: "right", paddingTop: "20px" }}>
-              <Typography
-                variant="body2"
-                component="div"
-                sx={{
-                  fontWeight: "400",
-                  color: "#798692",
-                  lineHeight: "1.5",
-                  fontSize: "20px",
-                }}
-              >
-                + 2500 €
-              </Typography>
-              <Typography
-                variant="body2"
-                component="div"
-                sx={{
-                  fontWeight: "400",
-                  color: "#798692",
-                  lineHeight: "1.5",
-                  fontSize: "13px",
-                }}
-              >
-                Current accounts
-              </Typography>
-            </Box>
-          </CardContent>
-        </Card>
+        <Link to='/myaccount' style={{ textDecoration: 'none' }}>
 
-        <Card
-          sx={{ marginBottom: "20px", minWidth: 250 }}
-          className={classes.customizeCard}
-        >
-          <CardContent>
-            <Typography
-              variant="h6"
-              component="div"
-              sx={{ paddingTop: "5px", color: "#637586" }}
-            >
-              Categorization
-            </Typography>
-            <Box sx={{ float: "right", paddingTop: "45px" }}>
+          <Card
+            sx={{ marginBottom: "20px", marginRight: "20px", minWidth: 250 }}
+            className={classes.customizeCard}
+          >
+            <CardContent>
               <Typography
-                variant="body2"
+                variant="h6"
                 component="div"
-                sx={{
-                  fontWeight: "400",
-                  color: "#798692",
-                  lineHeight: "1.5",
-                  fontSize: "20px",
-                }}
+                sx={{ paddingTop: "5px", color: "#637586" }}
               >
-                12
+                My Accounts
               </Typography>
               <Typography
                 variant="body2"
@@ -124,15 +60,83 @@ const Cards = () => {
                   fontWeight: "400",
                   color: "#798692",
                   lineHeight: "1.5",
-                  fontSize: "13px",
+                  fontSize: "17px",
                 }}
               >
-                to Assign
+                Pay
               </Typography>
-            </Box>
-          </CardContent>
-        </Card>
+              <Box sx={{ float: "right", paddingTop: "20px" }}>
+                <Typography
+                  variant="body2"
+                  component="div"
+                  sx={{
+                    fontWeight: "400",
+                    color: "#798692",
+                    lineHeight: "1.5",
+                    fontSize: "20px",
+                  }}
+                >
+                  + 2500 €
+                </Typography>
+                <Typography
+                  variant="body2"
+                  component="div"
+                  sx={{
+                    fontWeight: "400",
+                    color: "#798692",
+                    lineHeight: "1.5",
+                    fontSize: "13px",
+                  }}
+                >
+                  Current accounts
+                </Typography>
+              </Box>
+            </CardContent>
+          </Card>
+        </Link>
+        <Link to='/categorization' style={{ textDecoration: 'none' }}>
 
+          <Card
+            sx={{ marginBottom: "20px", minWidth: 250 }}
+            className={classes.customizeCard}
+          >
+            <CardContent>
+              <Typography
+                variant="h6"
+                component="div"
+                sx={{ paddingTop: "5px", color: "#637586" }}
+              >
+                Categorization
+              </Typography>
+              <Box sx={{ float: "right", paddingTop: "45px" }}>
+                <Typography
+                  variant="body2"
+                  component="div"
+                  sx={{
+                    fontWeight: "400",
+                    color: "#798692",
+                    lineHeight: "1.5",
+                    fontSize: "20px",
+                  }}
+                >
+                  12
+                </Typography>
+                <Typography
+                  variant="body2"
+                  component="div"
+                  sx={{
+                    fontWeight: "400",
+                    color: "#798692",
+                    lineHeight: "1.5",
+                    fontSize: "13px",
+                  }}
+                >
+                  to Assign
+                </Typography>
+              </Box>
+            </CardContent>
+          </Card>
+        </Link>
         <Card
           sx={{ marginBottom: "20px", marginLeft: "20px", minWidth: 250 }}
           className={classes.customizeCard}
