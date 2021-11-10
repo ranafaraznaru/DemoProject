@@ -15,7 +15,7 @@ const MyAccount = () => {
         </Box>
         <Box sx={{ paddingLeft: "15px" }}>
           <Button
-            variant="outlined"
+            variant="contained"
             href="#outlined-buttons"
             color="error"
             sx={{ paddinBottom: "5px", paddingTop: "9px" }}
@@ -33,13 +33,13 @@ const MyAccount = () => {
         </Box>
         <Box>
           <Button
-            variant="outlined"
+            variant="contained"
             href="#outlined-buttons"
             sx={{ marginRight: "10px" }}
           >
             Add
           </Button>
-          <Button variant="outlined" href="#outlined-buttons" color="error">
+          <Button variant="contained" href="#outlined-buttons" color="error">
             To Delete
           </Button>
           <Button href="#outlined-buttons">

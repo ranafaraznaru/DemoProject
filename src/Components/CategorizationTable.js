@@ -81,13 +81,11 @@ function stableSort(array, comparator) {
 const headCells = [
   {
     id: "name",
-    numeric: false,
     disablePadding: true,
     label: "Dated",
   },
   {
     id: "AccountNumber",
-    numeric: true,
     disablePadding: false,
     label: "AccountNumber",
   },
@@ -330,7 +328,7 @@ const CategorizationTable = () => {
                       <TableCell align="right">{row.AccountNumber}</TableCell>
                       <TableCell align="right">{row.Wording}</TableCell>
                       <TableCell align="right">{row.Rising}</TableCell>
-                      <TableCell align="right">{row.Categories}</TableCell>
+                      <TableCell align="right"><SelectOption /></TableCell>
                     </TableRow>
                   );
                 })}

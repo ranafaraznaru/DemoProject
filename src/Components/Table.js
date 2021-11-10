@@ -22,7 +22,6 @@ const columns = [
   {
     field: "Incumbent",
     headerName: "Incumbent",
-
     width: 110,
   },
   {

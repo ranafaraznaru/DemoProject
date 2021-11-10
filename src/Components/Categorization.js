@@ -148,13 +148,13 @@ const Categorization = () => {
         <Box>
           <Link to='/categorization/managecategories' style={{ textDecoration: 'none' }}>
 
-            <Button variant="outlined" href="#outlined-buttons">
+            <Button size="small"  variant="contained" href="#outlined-buttons" color='error' sx={{marginRight:'10px'}}>
               See everything
             </Button>
-            <Button variant="outlined" href="#outlined-buttons">
+            <Button  size="small"variant="contained" href="#outlined-buttons" color='success' sx={{marginRight:'10px'}}>
               Create / Modify category
             </Button>
-            <Button variant="outlined" href="#outlined-buttons">
+            <Button size="small" variant="contained" href="#outlined-buttons" color='secondary'>
               Manage automatic assignment rule
             </Button>
           </Link >

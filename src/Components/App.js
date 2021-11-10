@@ -14,6 +14,7 @@ const App = () => {
   return (
     <>
       <NavBar />
+      {/* <CategorizationTable /> */}
       <div style={{ backgroundColor: "#f5f5f5", minHeight: "100vh" }}>
         <ThemeProvider theme={theme}>
           <Routes>
