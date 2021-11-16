@@ -9,7 +9,7 @@ import CurrentAccount from "../Components/CurrentAccount";
 // import CategorizationTable from "../Components/CategorizationTable";
 import { Routes, Route } from "react-router-dom";
 import ManageCategories from "../Components/ManageCategories";
-
+import FinancialSummary from "../Components/FinancialSummary";
 const App = () => {
 	return (
 		<>
@@ -25,6 +25,8 @@ const App = () => {
 							element={<CurrentAccount />}
 						/>
 						<Route path="/categorization" element={<Categorization />} />
+						<Route path="/financialsummary" element={<FinancialSummary />} />
+
 						<Route
 							path="/categorization/managecategories"
 							element={<ManageCategories />}

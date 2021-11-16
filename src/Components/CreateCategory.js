@@ -68,7 +68,7 @@ const CreateCategory = (props) => {
 					}}
 				>
 					<Button
-						variant="outlined"
+						variant="contained"
 						href="#outlined-buttons"
 						color="success"
 						sx={{ marginRight: "10px" }}

@@ -72,7 +72,7 @@ const ChildModal = () => {
 					<CreateCategory>
 						<Button
 							onClick={handleClose}
-							variant="outlined"
+							variant="contained"
 							href="#outlined-buttons"
 							color="error"
 							sx={{ marginRight: "55px" }}

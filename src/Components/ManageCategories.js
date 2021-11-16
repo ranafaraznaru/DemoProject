@@ -3,9 +3,9 @@ import { DataGrid } from "@mui/x-data-grid";
 import { Box, Typography, Button } from "@mui/material";
 
 const columns = [
-	{ field: "id", headerName: "ID", width: 300 },
-	{ field: "Category", headerName: "Category", width: 300 },
-	{ field: "SubCategory", headerName: "Sub Category", width: 300 },
+	{ field: "id", headerName: "ID", width: 150 },
+	{ field: "Category", headerName: "Category", width: 200 },
+	{ field: "SubCategory", headerName: "Sub Category", width: 200 },
 
 	{
 		field: "Budget",
@@ -55,7 +55,7 @@ const ManageCategories = (props) => {
 			</Box>
 			<Box sx={{ float: "right" }}>
 				<Button
-					variant="outlined"
+					variant="contained"
 					href="#outlined-buttons"
 					color="success"
 					sx={{ marginRight: "10px" }}
@@ -64,7 +64,7 @@ const ManageCategories = (props) => {
 				</Button>
 
 				<Button
-					variant="outlined"
+					variant="contained"
 					href="#outlined-buttons"
 					color="error"
 					sx={{ marginRight: "10px" }}
