@@ -72,8 +72,6 @@ const FinancialSummary = () => {
 								{" "}
 								<BalanceOfAccounts />
 								<BalanceOfAccounts />
-								<BalanceOfAccounts />
-								<BalanceOfAccounts />
 							</Item>
 						</Scrollbars>
 					</Grid>

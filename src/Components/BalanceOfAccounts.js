@@ -3,8 +3,20 @@ import { Box, Typography, Stack } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles((theme) => ({
-	BalanceOfAccounts: {
-		[theme.breakpoints.down("md")]: {},
+	accountbalanceData: {
+		[theme.breakpoints.up("md")]: {
+			display: "flex",
+			justifyContent: "space-between",
+		},
+		[theme.breakpoints.down("md")]: {
+			display: "flex",
+			justifyContent: "space-around",
+		},
+	},
+	currentAccount: {
+		[theme.breakpoints.down("md")]: {
+			paddingLeft: "21px",
+		},
 	},
 }));
 
@@ -14,35 +26,34 @@ const BalanceOfAccounts = () => {
 	return (
 		<>
 			<Box>
-				<Box sx={{ display: "flex" }}>
+				<Box className={classes.accountbalanceData}>
 					<Typography variant="h5" gutterBottom>
 						Balance of Accounts
 					</Typography>
-					<Typography variant="h5" gutterBottom sx={{ marginLeft: "170px" }}>
+					<Typography variant="h5" gutterBottom>
 						2
 					</Typography>
 				</Box>
-				<Box sx={{ display: "flex" }}>
+				<Box className={classes.accountbalanceData}>
 					<Typography variant="h6">Date of update</Typography>
 
-					<Typography variant="h6" sx={{ marginLeft: "180px" }}>
-						7.10.2021
-					</Typography>
+					<Typography variant="h6">7.10.2021</Typography>
 				</Box>
 				<Stack>
-					<Typography variant="h6" sx={{ width: "fit-content" }}>
+					<Typography
+						className={classes.currentAccount}
+						variant="h6"
+						sx={{ width: "fit-content" }}
+					>
 						ING current account
 					</Typography>
 				</Stack>
-				<Box sx={{ display: "flex" }}>
+				<Box className={classes.accountbalanceData}>
 					<Typography variant="h6" sx={{ width: "fit-content" }}>
 						54678000
 					</Typography>
-					<Typography
-						variant="h6"
-						sx={{ width: "fit-content", marginLeft: "260px" }}
-					>
-						+ 350
+					<Typography variant="h6" sx={{ width: "fit-content" }}>
+						+350
 					</Typography>
 				</Box>
 			</Box>
