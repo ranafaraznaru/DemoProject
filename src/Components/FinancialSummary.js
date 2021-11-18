@@ -78,7 +78,7 @@ const FinancialSummary = () => {
 				</Grid>
 			</Box>
 			<Grid container spacing={3}>
-				<Grid item xs={12} md={4} mt={2} pb={8}>
+				<Grid item xs={12} md={4} mt={2}>
 					<Card sx={{ minWidth: 275 }}>
 						<CardContent
 							sx={{ display: "flex", justifyContent: "space-between" }}
