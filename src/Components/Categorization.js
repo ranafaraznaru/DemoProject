@@ -1,6 +1,6 @@
 import * as React from "react";
 import { DataGrid } from "@mui/x-data-grid";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, Grid } from "@mui/material";
 import Modals from "../Components/Modals";
 
 // import CategorizationTable from "../Components/CategorizationTable";
@@ -106,40 +106,35 @@ const rows = [
 const Categorization = () => {
 	return (
 		<>
-			<Box
-				sx={{
-					display: "flex",
-					justifyContent: "space-around",
-					backgroundColor: "cadetblue",
-				}}
-				mb={4}
-			>
-				<Box>
-					<Typography variant="h3" component="div" gutterBottom>
-						0.00 %
-					</Typography>
-					<Typography variant="body2" gutterBottom>
-						Automation rate
-					</Typography>
-				</Box>
-				<Box>
-					<Typography variant="h3" component="div" gutterBottom>
-						0
-					</Typography>
-					<Typography variant="body2" gutterBottom>
-						Number of operations to be categorized
-					</Typography>
-				</Box>
-				<Box>
-					<Typography variant="h3" component="div" gutterBottom>
-						1
-					</Typography>
-					<Typography variant="body2" gutterBottom>
-						Number of categories
-					</Typography>
-				</Box>
+			<Box sx={{ flexGrow: 1 }} pt={5}>
+				<Grid container spacing={3} align="center">
+					<Grid item xs={4}>
+						<Typography variant="h3" component="div" gutterBottom>
+							0.00 %
+						</Typography>
+						<Typography variant="body2" gutterBottom>
+							Automation rate
+						</Typography>
+					</Grid>
+					<Grid item xs={4}>
+						<Typography variant="h3" component="div" gutterBottom>
+							0
+						</Typography>
+						<Typography variant="body2" gutterBottom>
+							Number of operations to be categorized
+						</Typography>
+					</Grid>
+					<Grid item xs={4}>
+						<Typography variant="h3" component="div" gutterBottom>
+							1
+						</Typography>
+						<Typography variant="body2" gutterBottom>
+							Number of categories
+						</Typography>
+					</Grid>
+				</Grid>
 			</Box>
-			<Box sx={{ display: "flex", justifyContent: "space-between" }}>
+			<Box sx={{ display: "flex", justifyContent: "space-between" }} py={3}>
 				<Box>
 					<Typography variant="subtitle1" gutterBottom component="div">
 						Summary of operations assignment

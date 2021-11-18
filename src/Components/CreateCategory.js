@@ -3,7 +3,7 @@ import { Box, TextField, Grid, Typography, Button } from "@mui/material";
 const CreateCategory = (props) => {
 	return (
 		<>
-			<Box sx={{ backgroundColor: "lavender" }}>
+			<Box sx={{ backgroundColor: "white" }}>
 				<Box>
 					<Typography variant="h5" sx={{ textAlign: "center" }} pb={5} pt={3}>
 						Manage categories
@@ -12,7 +12,7 @@ const CreateCategory = (props) => {
 				<Box
 					component="form"
 					sx={{
-						"& .MuiTextField-root": { m: 1, width: "25ch", marginLeft: "40px" },
+						"& .MuiTextField-root": { m: 1, marginLeft: "40px" },
 					}}
 					noValidate
 					autoComplete="off"
@@ -63,7 +63,7 @@ const CreateCategory = (props) => {
 						marginTop: "40px",
 						paddingTop: "40px",
 						paddingBottom: "30px",
-						backgroundColor: "lavender",
+						backgroundColor: "white",
 						minWidth: "100%",
 					}}
 				>

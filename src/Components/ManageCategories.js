@@ -1,11 +1,11 @@
 import * as React from "react";
 import { DataGrid } from "@mui/x-data-grid";
-import { Box, Typography, Button } from "@mui/material";
+import { Box, Typography, Button, Grid } from "@mui/material";
 
 const columns = [
-	{ field: "id", headerName: "ID", width: 150 },
-	{ field: "Category", headerName: "Category", width: 200 },
-	{ field: "SubCategory", headerName: "Sub Category", width: 200 },
+	{ field: "id", headerName: "ID", width: 200 },
+	{ field: "Category", headerName: "Category", width: 250 },
+	{ field: "SubCategory", headerName: "Sub Category", width: 250 },
 
 	{
 		field: "Budget",
@@ -53,24 +53,28 @@ const ManageCategories = (props) => {
 					/>
 				</div>
 			</Box>
-			<Box sx={{ float: "right" }}>
-				<Button
-					variant="contained"
-					href="#outlined-buttons"
-					color="success"
-					sx={{ marginRight: "10px" }}
-				>
-					To validate
-				</Button>
 
-				<Button
-					variant="contained"
-					href="#outlined-buttons"
-					color="error"
-					sx={{ marginRight: "10px" }}
-				>
-					Cancel
-				</Button>
+			<Box>
+				<Grid container spacing={2} columns={12} pl={3} py={3} align="center">
+					<Grid item xs={12}>
+						<Button
+							variant="contained"
+							href="#outlined-buttons"
+							color="success"
+							sx={{ marginRight: "10px" }}
+						>
+							To validate
+						</Button>
+						<Button
+							variant="contained"
+							href="#outlined-buttons"
+							color="error"
+							sx={{ marginRight: "10px" }}
+						>
+							Cancel
+						</Button>
+					</Grid>
+				</Grid>
 			</Box>
 		</>
 	);

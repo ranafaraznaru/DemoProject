@@ -1,6 +1,6 @@
 import React from "react";
 import { styled } from "@mui/material/styles";
-import { Box, Paper, Grid, Typography } from "@mui/material";
+import { Box, Paper, Grid, Typography, Card, CardContent } from "@mui/material";
 import PieChart from "../Components/PieChart";
 import ColumnChart from "./ColumnChart";
 import BalanceOfAccounts from "../Components/BalanceOfAccounts";
@@ -79,6 +79,56 @@ const FinancialSummary = () => {
 					</Grid>
 				</Grid>
 			</Box>
+			<Grid container spacing={3}>
+				<Grid item xs={12} md={4} mt={2} pb={8}>
+					<Card sx={{ minWidth: 275 }}>
+						<CardContent
+							sx={{ display: "flex", justifyContent: "space-between" }}
+						>
+							<Typography
+								variant="h6"
+								component="div"
+								sx={{
+									paddingTop: "5px",
+									paddingLeft: "10px",
+									color: "#637586",
+								}}
+							>
+								Cash
+							</Typography>
+							<Typography
+								variant="h6"
+								component="div"
+								sx={{ paddingTop: "5px", color: "#637586" }}
+							>
+								600 €
+							</Typography>
+						</CardContent>
+					</Card>
+				</Grid>
+				<Grid item xs={12} md={4} mt={2}>
+					<Card sx={{ minWidth: 275 }}>
+						<CardContent
+							sx={{ display: "flex", justifyContent: "space-between" }}
+						>
+							<Typography
+								variant="h6"
+								component="div"
+								sx={{ paddingTop: "5px", color: "#637586" }}
+							>
+								Patrimony
+							</Typography>
+							<Typography
+								variant="h6"
+								component="div"
+								sx={{ paddingTop: "5px", color: "#637586" }}
+							>
+								200 €
+							</Typography>
+						</CardContent>
+					</Card>
+				</Grid>
+			</Grid>
 		</>
 	);
 };

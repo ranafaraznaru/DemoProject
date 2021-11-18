@@ -1,9 +1,11 @@
 import * as React from "react";
-import Box from "@mui/material/Box";
+import { Box, Grid } from "@mui/material";
 import Modal from "@mui/material/Modal";
 import Button from "@mui/material/Button";
 import ManageCategories from "../Components/ManageCategories";
 import CreateCategory from "../Components/CreateCategory";
+import { makeStyles } from "@mui/styles";
+
 const style = {
 	position: "absolute",
 	top: "50%",
@@ -29,36 +31,37 @@ const ChildModal = () => {
 
 	return (
 		<React.Fragment>
-			<Box sx={{ display: "flex", justifyContent: "end" }}>
-				<Box>
-					<Button
-						onClick={handleOpen}
-						variant="contained"
-						href="#outlined-buttons"
-						color="secondary"
-						sx={{ marginRight: "10px" }}
-					>
-						To Create
-					</Button>
-
-					<Button
-						onClick={handleOpen}
-						variant="contained"
-						href="#outlined-buttons"
-						color="success"
-						sx={{ marginRight: "10px" }}
-					>
-						To Modify
-					</Button>
-					<Button
-						onClick={handleOpen}
-						variant="contained"
-						href="#outlined-buttons"
-						color="error"
-					>
-						To Delete
-					</Button>
-				</Box>
+			<Box>
+				<Grid container spacing={2} columns={12} pl={3} py={3} align="center">
+					<Grid item xs={12}>
+						<Button
+							onClick={handleOpen}
+							variant="contained"
+							href="#outlined-buttons"
+							color="secondary"
+							sx={{ marginRight: "10px" }}
+						>
+							To Create
+						</Button>
+						<Button
+							onClick={handleOpen}
+							variant="contained"
+							href="#outlined-buttons"
+							color="success"
+							sx={{ marginRight: "10px" }}
+						>
+							To Modify
+						</Button>
+						<Button
+							onClick={handleOpen}
+							variant="contained"
+							href="#outlined-buttons"
+							color="error"
+						>
+							To Delete
+						</Button>
+					</Grid>
+				</Grid>
 			</Box>
 
 			<Modal
@@ -85,8 +88,16 @@ const ChildModal = () => {
 		</React.Fragment>
 	);
 };
-
+const useStyles = makeStyles((theme) => ({
+	ButtonText: {
+		[theme.breakpoints.down("md")]: {
+			fontSize: "8px !important",
+		},
+	},
+}));
 const NestedModal = () => {
+	const classes = useStyles();
+
 	const [open, setOpen] = React.useState(false);
 	const handleOpen = () => {
 		setOpen(true);
@@ -100,6 +111,7 @@ const NestedModal = () => {
 			<Box sx={{ display: "flex" }}>
 				<Box>
 					<Button
+						className={classes.ButtonText}
 						onClick={handleOpen}
 						size="small"
 						variant="contained"
@@ -110,6 +122,7 @@ const NestedModal = () => {
 						See everything
 					</Button>
 					<Button
+						className={classes.ButtonText}
 						onClick={handleOpen}
 						size="small"
 						variant="contained"
@@ -120,6 +133,7 @@ const NestedModal = () => {
 						Create / Modify category
 					</Button>
 					<Button
+						className={classes.ButtonText}
 						onClick={handleOpen}
 						size="small"
 						variant="contained"

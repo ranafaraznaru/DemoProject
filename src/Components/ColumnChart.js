@@ -6,7 +6,7 @@ class ColumnChart extends Component {
 	render() {
 		const options = {
 			title: {
-				// text: "Basic Column Chart",
+				text: "my cashflow €3000",
 			},
 			animationEnabled: true,
 			data: [

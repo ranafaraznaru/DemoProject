@@ -1,11 +1,11 @@
 import React from "react";
 import NavBar from "./NavBar";
-import Cards from "../Components/Cards";
+import Cards from "./Cards";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "../Components/Theme";
 import Table from "./Table";
 import Categorization from "../Components/Categorization";
-import CurrentAccount from "../Components/CurrentAccount";
+import CurrentAccount from "./CurrentAccount";
 // import CategorizationTable from "../Components/CategorizationTable";
 import { Routes, Route } from "react-router-dom";
 import ManageCategories from "../Components/ManageCategories";
@@ -14,6 +14,7 @@ const App = () => {
 	return (
 		<>
 			<NavBar />
+
 			{/* <CategorizationTable /> */}
 			<div style={{ backgroundColor: "#f5f5f5", minHeight: "100vh" }}>
 				<ThemeProvider theme={theme}>

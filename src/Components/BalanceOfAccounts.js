@@ -1,6 +1,16 @@
 import React from "react";
 import { Box, Typography, Stack } from "@mui/material";
+import { makeStyles } from "@mui/styles";
+
+const useStyles = makeStyles((theme) => ({
+	BalanceOfAccounts: {
+		[theme.breakpoints.down("md")]: {},
+	},
+}));
+
 const BalanceOfAccounts = () => {
+	const classes = useStyles();
+
 	return (
 		<>
 			<Box>

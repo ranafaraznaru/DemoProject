@@ -6,10 +6,10 @@ var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 class PieChart extends Component {
 	render() {
 		const options = {
-			// exportEnabled: true,
+			exportEnabled: true,
 			animationEnabled: true,
 			title: {
-				// text: "my income",
+				text: "my income , €3000",
 			},
 			data: [
 				{
