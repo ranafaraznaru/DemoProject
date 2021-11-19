@@ -20,7 +20,7 @@ const AddAccounts = () => {
 					spacing={2}
 					sx={{ displa: "flex", justifyContent: "center" }}
 				>
-					<Grid item xs={12} md={2} align="center">
+					<Grid item xs={12} align="center">
 						<span>
 							financial institution
 							<DropdownButton
@@ -34,7 +34,7 @@ const AddAccounts = () => {
 							</DropdownButton>
 						</span>
 					</Grid>
-					<Grid item xs={12} md={2} align="center">
+					<Grid item xs={12} align="center">
 						<span>
 							Type of account
 							<DropdownButton
@@ -48,7 +48,7 @@ const AddAccounts = () => {
 							</DropdownButton>
 						</span>
 					</Grid>
-					<Grid item xs={12} md={2} align="center">
+					<Grid item xs={12} align="center">
 						<span>
 							IBAN
 							<br />
@@ -60,7 +60,7 @@ const AddAccounts = () => {
 							/>
 						</span>
 					</Grid>
-					<Grid item xs={12} md={2} align="center">
+					<Grid item xs={12} align="center">
 						<span>
 							CSV1 Upload
 							<br />
@@ -83,7 +83,7 @@ const AddAccounts = () => {
 							</label>
 						</span>
 					</Grid>
-					<Grid item xs={12} md={2} align="center">
+					<Grid item xs={12} align="center">
 						<span>
 							CSV2 Upload
 							<br />
