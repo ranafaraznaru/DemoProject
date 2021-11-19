@@ -6,24 +6,24 @@ import Modals from "../Components/Modals";
 // import CategorizationTable from "../Components/CategorizationTable";
 
 const columns = [
-	{ field: "Dated", headerName: "Dated", width: 200 },
-	{ field: "AccountNumber", headerName: "Account Number", width: 300 },
+	{ field: "Dated", headerName: "Daté", width: 200 },
+	{ field: "AccountNumber", headerName: "Numéro de compte", width: 300 },
 
 	{
 		field: "Wording",
-		headerName: "Wording",
+		headerName: "Formulation",
 
 		width: 500,
 	},
 	{
-		field: "Rising",
+		field: "En hausse",
 		headerName: "Rising",
 
 		width: 150,
 	},
 	{
 		field: "Categories",
-		headerName: "Categories",
+		headerName: "Catégories",
 
 		width: 150,
 	},
@@ -113,7 +113,7 @@ const Categorization = () => {
 							0.00 %
 						</Typography>
 						<Typography variant="body2" gutterBottom>
-							Automation rate
+							Taux d'automatisation
 						</Typography>
 					</Grid>
 					<Grid item xs={4}>
@@ -121,7 +121,7 @@ const Categorization = () => {
 							0
 						</Typography>
 						<Typography variant="body2" gutterBottom>
-							Number of operations to be categorized
+							Nombre d'opérations à catégoriser
 						</Typography>
 					</Grid>
 					<Grid item xs={4}>
@@ -129,15 +129,15 @@ const Categorization = () => {
 							1
 						</Typography>
 						<Typography variant="body2" gutterBottom>
-							Number of categories
+							Nombre de catégories
 						</Typography>
 					</Grid>
-				</Grid> 
+				</Grid>
 			</Box>
 			<Box sx={{ display: "flex", justifyContent: "space-between" }} py={3}>
 				<Box>
 					<Typography variant="subtitle1" gutterBottom component="div">
-						Summary of operations assignment
+						Résumé de l'affectation des opérations
 					</Typography>
 				</Box>
 				<Box>

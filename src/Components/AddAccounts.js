@@ -9,7 +9,7 @@ const AddAccounts = () => {
 			<Grid container spacing={2} align="center" pt={4}>
 				<Grid xs={12}>
 					<Typography variant="h5" gutterBottom component="div">
-						Add Accounts
+						Ajouter des comptes
 					</Typography>
 				</Grid>
 			</Grid>
@@ -22,7 +22,7 @@ const AddAccounts = () => {
 				>
 					<Grid item xs={12} align="center">
 						<span>
-							financial institution
+							institution financière
 							<DropdownButton
 								variant="warning"
 								id="dropdown-basic-button"
@@ -36,7 +36,7 @@ const AddAccounts = () => {
 					</Grid>
 					<Grid item xs={12} align="center">
 						<span>
-							Type of account
+							Type de compte
 							<DropdownButton
 								variant="warning"
 								id="dropdown-basic-button"
@@ -54,7 +54,7 @@ const AddAccounts = () => {
 							<br />
 							<TextField
 								id="outlined-basic"
-								label="Search here.."
+								label="Cherche ici.."
 								variant="outlined"
 								size="small"
 							/>
@@ -62,7 +62,7 @@ const AddAccounts = () => {
 					</Grid>
 					<Grid item xs={12} align="center">
 						<span>
-							CSV1 Upload
+							Téléchargement CSV1
 							<br />
 							<label htmlFor="upload-photo">
 								<input
@@ -78,14 +78,15 @@ const AddAccounts = () => {
 									aria-label="add"
 									variant="extended"
 								>
-									<AddIcon /> Choose File
+									<AddIcon />
+									Choisir le fichier
 								</Fab>
 							</label>
 						</span>
 					</Grid>
 					<Grid item xs={12} align="center">
 						<span>
-							CSV2 Upload
+							Téléchargement CSV2
 							<br />
 							<label htmlFor="upload-photo">
 								<input
@@ -101,7 +102,7 @@ const AddAccounts = () => {
 									aria-label="add"
 									variant="extended"
 								>
-									<AddIcon /> Choose File
+									<AddIcon /> Choisir le fichier
 								</Fab>
 							</label>
 						</span>
@@ -115,7 +116,7 @@ const AddAccounts = () => {
 							color="success"
 							sx={{ marginRight: "10px" }}
 						>
-							To validate
+							Valider
 						</Button>
 						<Button
 							variant="contained"
@@ -123,7 +124,7 @@ const AddAccounts = () => {
 							color="error"
 							sx={{ marginRight: "10px" }}
 						>
-							Cancel
+							Annuler
 						</Button>
 					</Grid>
 				</Grid>

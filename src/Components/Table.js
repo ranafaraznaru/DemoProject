@@ -5,9 +5,9 @@ import Box from "@mui/material/Box";
 import { Link } from "react-router-dom";
 
 const columns = [
-	{ field: "id", headerName: "ID", width: 60 },
-	{ field: "Name", headerName: "Name", width: 200 },
-	{ field: "AccountNumber", headerName: "Account Number", width: 300 },
+	{ field: "id", headerName: "identifiant", width: 100 },
+	{ field: "Name", headerName: "Nom", width: 200 },
+	{ field: "AccountNumber", headerName: "Numéro de compte", width: 200 },
 
 	{
 		field: "IBAN",
@@ -22,20 +22,20 @@ const columns = [
 	},
 	{
 		field: "Incumbent",
-		headerName: "Incumbent",
+		headerName: "Titulaire",
 		width: 110,
 	},
 	{
 		field: "Clientnumber",
-		headerName: "Client number",
+		headerName: "Numéro client",
 
 		width: 150,
 	},
 	{
 		field: "AccountType",
-		headerName: "Account Type",
+		headerName: "Type de compte",
 
-		width: 150,
+		width: 130,
 	},
 ];
 

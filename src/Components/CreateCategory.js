@@ -6,7 +6,7 @@ const CreateCategory = (props) => {
 			<Box sx={{ backgroundColor: "white" }}>
 				<Box>
 					<Typography variant="h5" sx={{ textAlign: "center" }} pb={5} pt={3}>
-						Manage categories
+						Gérer les catégories
 					</Typography>
 				</Box>
 				<Box
@@ -73,7 +73,7 @@ const CreateCategory = (props) => {
 						color="success"
 						sx={{ marginRight: "10px" }}
 					>
-						To validate
+						Valider
 					</Button>
 
 					{props.children}

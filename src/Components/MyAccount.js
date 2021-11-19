@@ -12,20 +12,20 @@ const MyAccount = () => {
 				<Grid container spacing={3} pl={3}>
 					<Grid item xs={12} md="auto" align="center">
 						<Typography variant="subtitle1" component="div">
-							Research
+							Recherche
 						</Typography>
 					</Grid>
 					<Grid item xs={12} md="auto" align="center">
 						<TextField
 							variant="outlined"
-							label="Type here"
+							label="Écrivez ici"
 							id="outlined-size-small"
 							size="small"
 						/>
 					</Grid>
 					<Grid item xs={12} md="auto" align="center">
 						<Button variant="contained" href="#outlined-buttons" color="error">
-							To Search
+							Chercher
 						</Button>
 					</Grid>
 				</Grid>
@@ -34,7 +34,7 @@ const MyAccount = () => {
 				<Grid container spacing={2} columns={12} pl={3} py={3}>
 					<Grid item xs={12} md={9}>
 						<Typography variant="subtitle1" gutterBottom component="div">
-							My Account
+							Mon compte
 						</Typography>
 					</Grid>
 					<Grid item xs={12} md={3}>
@@ -46,7 +46,7 @@ const MyAccount = () => {
 							color="error"
 							sx={{ marginLeft: "15px" }}
 						>
-							To Delete
+							Supprimer
 						</Button>
 						<Button>
 							{/* <SettingsIcon /> */}

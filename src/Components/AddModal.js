@@ -21,7 +21,7 @@ export default function ResponsiveDialog() {
 	return (
 		<div>
 			<Button variant="contained" onClick={handleClickOpen}>
-				Add
+				Ajouter
 			</Button>
 			<Dialog
 				fullScreen={fullScreen}

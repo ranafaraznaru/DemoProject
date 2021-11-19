@@ -30,7 +30,7 @@ const Cards = () => {
 				sx={{ paddingTop: "30px", color: "#637586", textAlign: "center" }}
 				pb={4}
 			>
-				Finance
+				La Finance
 			</Typography>
 			<Box sx={{ flexGrow: 1 }}>
 				<Grid sx={{ justifyContent: "center" }} container spacing={2}>
@@ -44,7 +44,7 @@ const Cards = () => {
 										component="div"
 										sx={{ paddingTop: "5px", color: "#637586" }}
 									>
-										My Accounts
+										Mes comptes
 									</Typography>
 									<Typography
 										variant="body2"
@@ -56,7 +56,7 @@ const Cards = () => {
 											fontSize: "17px",
 										}}
 									>
-										Pay
+										Payer
 									</Typography>
 									<Box sx={{ float: "right", paddingTop: "20px" }}>
 										<Typography
@@ -81,7 +81,7 @@ const Cards = () => {
 												fontSize: "13px",
 											}}
 										>
-											Current accounts
+											Compte courant
 										</Typography>
 									</Box>
 								</CardContent>
@@ -98,7 +98,7 @@ const Cards = () => {
 										component="div"
 										sx={{ paddingTop: "5px", color: "#637586" }}
 									>
-										Categorization
+										Catégorisation
 									</Typography>
 									<Box sx={{ float: "right", paddingTop: "45px" }}>
 										<Typography
@@ -123,7 +123,7 @@ const Cards = () => {
 												fontSize: "13px",
 											}}
 										>
-											to Assign
+											assigner
 										</Typography>
 									</Box>
 								</CardContent>
@@ -143,7 +143,7 @@ const Cards = () => {
 										component="div"
 										sx={{ paddingTop: "5px", color: "#637586" }}
 									>
-										Financial summary
+										Résumé financier
 									</Typography>
 								</CardContent>
 							</Card>

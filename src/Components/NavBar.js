@@ -69,8 +69,8 @@ const NavBar2 = () => {
 			open={isMenuOpen}
 			onClose={handleMenuClose}
 		>
-			<MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-			<MenuItem onClick={handleMenuClose}>My account</MenuItem>
+			<MenuItem onClick={handleMenuClose}>Profil</MenuItem>
+			<MenuItem onClick={handleMenuClose}>Mon Compte</MenuItem>
 		</Menu>
 	);
 
@@ -126,7 +126,7 @@ const NavBar2 = () => {
 							<DropdownButton
 								variant="warning"
 								id="dropdown-basic-button"
-								title="Home"
+								title="Accueil"
 							>
 								<Dropdown.Item href="#/action-1">demo1</Dropdown.Item>
 								<Dropdown.Item href="#/action-2">demo2</Dropdown.Item>

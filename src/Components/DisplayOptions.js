@@ -15,13 +15,13 @@ const DisplayOptions = () => {
 			<Grid container spacing={2} align="center" pt={4}>
 				<Grid xs={12}>
 					<Typography variant="h5" gutterBottom component="div">
-						Display Options
+						Option d'affichage
 					</Typography>
 				</Grid>
 				<Grid xs={12}>
 					<TextField
 						id="outlined-basic"
-						label="Research"
+						label="Recherche"
 						variant="outlined"
 						size="small"
 					/>
@@ -32,23 +32,23 @@ const DisplayOptions = () => {
 					<FormGroup>
 						<FormControlLabel
 							control={<Checkbox defaultChecked />}
-							label="Select All (#NbreOfEntry)"
+							label="Tout sélectionner (#NbreOfEntry)"
 						/>
 						<FormControlLabel
 							control={<Checkbox defaultChecked />}
-							label="id"
+							label="identifiant"
 						/>{" "}
 						<FormControlLabel
 							control={<Checkbox defaultChecked />}
-							label="Name"
+							label="Nom"
 						/>{" "}
 						<FormControlLabel
 							control={<Checkbox defaultChecked />}
-							label="Surgery"
+							label="Opération"
 						/>{" "}
 						<FormControlLabel
 							control={<Checkbox defaultChecked />}
-							label="Account Number"
+							label="Numéro de compte"
 						/>{" "}
 						<FormControlLabel
 							control={<Checkbox defaultChecked />}
@@ -56,31 +56,31 @@ const DisplayOptions = () => {
 						/>{" "}
 						<FormControlLabel
 							control={<Checkbox defaultChecked />}
-							label="Incumbent"
+							label="Titulaire"
 						/>
 						<FormControlLabel
 							control={<Checkbox defaultChecked />}
-							label="Creation Date"
+							label="Date de création"
 						/>
 						<FormControlLabel
 							control={<Checkbox defaultChecked />}
-							label="Currency"
+							label="Monnaie"
 						/>
 						<FormControlLabel
 							control={<Checkbox defaultChecked />}
-							label="Opening Date"
+							label="Date d'ouverture"
 						/>
 						<FormControlLabel
 							control={<Checkbox defaultChecked />}
-							label="Client Number"
+							label="Numéro client"
 						/>
 						<FormControlLabel
 							control={<Checkbox defaultChecked />}
-							label="KEYB"
+							label="TOUCHE"
 						/>
 						<FormControlLabel
 							control={<Checkbox defaultChecked />}
-							label="Account Type"
+							label="Type de compte"
 						/>
 					</FormGroup>
 				</Grid>
@@ -93,7 +93,7 @@ const DisplayOptions = () => {
 						color="success"
 						sx={{ marginRight: "10px" }}
 					>
-						To validate
+						Valider
 					</Button>
 					<Button
 						variant="contained"
@@ -101,7 +101,7 @@ const DisplayOptions = () => {
 						color="error"
 						sx={{ marginRight: "10px" }}
 					>
-						Cancel
+						Annuler
 					</Button>
 				</Grid>
 			</Grid>

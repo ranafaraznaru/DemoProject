@@ -7,11 +7,11 @@ const CurrentAccount = () => {
 		<>
 			<Box sx={{ display: "flex" }} pt={4} pl={3}>
 				<Box>
-					<Typography variant="h5">My Account</Typography>
+					<Typography variant="h5">Mon compte</Typography>
 				</Box>
 
 				<Box pl={2}>
-					<Typography variant="h6">Current account</Typography>
+					<Typography variant="h6">Compte courant</Typography>
 				</Box>
 			</Box>
 			<Grid container spacing={3} pl={3} py={3}>
@@ -19,9 +19,9 @@ const CurrentAccount = () => {
 					<img src={logo} alt="" />
 				</Grid>
 				<Grid item md={11} xs={12}>
-					<Typography variant="h6">Opening Date: 2021-01-10</Typography>
-					<Typography variant="h6">Creation Date :2021-10-24</Typography>
-					<Typography variant="h6">Client number : XXXXXX</Typography>
+					<Typography variant="h6">Date d'ouverture : 2021-01-10</Typography>
+					<Typography variant="h6">Date de création : 2021-10-24</Typography>
+					<Typography variant="h6">Numéro de client : XXXXXX</Typography>
 				</Grid>
 			</Grid>
 
@@ -29,38 +29,38 @@ const CurrentAccount = () => {
 				<Grid container spacing={3} pl={3}>
 					<Grid item xs="auto">
 						<Button variant="contained" color="success">
-							General Information
+							Informations générales
 						</Button>
 					</Grid>
 					<Grid item xs="auto">
 						<Button variant="contained" color="error">
-							Accounts history
+							Historique des comptes
 						</Button>
 					</Grid>
 					<Grid item xs="auto">
 						<Button variant="contained" color="secondary">
-							linked document
+							document lié
 						</Button>
 					</Grid>
 				</Grid>
 			</Box>
 			<Box pt={3} pl={3}>
-				<Typography variant="h5">Account information</Typography>
+				<Typography variant="h5">Information sur le compte</Typography>
 				<Typography variant="h5">IBAN:</Typography>
 				<Typography variant="h5">1,230,000</Typography>
 			</Box>
 			<Box pt={3} pl={3}>
-				<Typography variant="h5">Incumbent:</Typography>
+				<Typography variant="h5">Titulaire:</Typography>
 				<Typography variant="h5">Michael</Typography>
 			</Box>
 			<Box pt={3} pl={3}>
-				<Typography variant="h5">Account number:</Typography>
+				<Typography variant="h5">Numéro de compte:</Typography>
 				<Typography variant="h5">12313</Typography>
 			</Box>
 			<Box pt={3} pl={3}>
-				<Typography variant="h5">City</Typography>
+				<Typography variant="h5">Ville</Typography>
 				<Typography variant="h5">VALENCE CEDEX</Typography>
-				<Typography variant="h5">Name Street:</Typography>
+				<Typography variant="h5">Nom Rue:</Typography>
 				<Typography variant="h5">Amundi ESR</Typography>
 			</Box>
 			<Grid
@@ -72,13 +72,13 @@ const CurrentAccount = () => {
 				sx={{ backgroundColor: "darksalmon" }}
 			>
 				<Grid item xs={4}>
-					<Typography variant="h6">Dated</Typography>
+					<Typography variant="h6">Daté</Typography>
 				</Grid>
 				<Grid item xs={4}>
-					<Typography variant="h6">Wording</Typography>
+					<Typography variant="h6">Formulation</Typography>
 				</Grid>
 				<Grid item xs={4}>
-					<Typography variant="h6">Rising</Typography>
+					<Typography variant="h6">En hausse</Typography>
 				</Grid>
 				<Grid item xs={4}>
 					<Typography variant="body2">2021-01-10</Typography>
@@ -102,7 +102,7 @@ const CurrentAccount = () => {
 			<Box>
 				<Box>
 					<Typography variant="h5" pl={3} pt={3}>
-						Related documents
+						Documents connexes
 					</Typography>
 				</Box>
 				<Box sx={{ display: "flex", justifyContent: "space-between" }} py={5}>
@@ -113,13 +113,13 @@ const CurrentAccount = () => {
 					</Box>
 					<Box>
 						<Typography variant="h5" pr={3}>
-							Add documents
+							Ajouter des documents
 						</Typography>
 					</Box>
 				</Box>
 				<Box>
 					<Typography variant="h5" sx={{ textAlign: "center" }} pb={5}>
-						No document found
+						Aucun document trouvé
 					</Typography>
 				</Box>
 			</Box>

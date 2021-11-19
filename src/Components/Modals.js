@@ -41,7 +41,7 @@ const ChildModal = () => {
 							color="secondary"
 							sx={{ marginRight: "10px" }}
 						>
-							To Create
+							Créer
 						</Button>
 						<Button
 							onClick={handleOpen}
@@ -50,7 +50,7 @@ const ChildModal = () => {
 							color="success"
 							sx={{ marginRight: "10px" }}
 						>
-							To Modify
+							Modifier
 						</Button>
 						<Button
 							onClick={handleOpen}
@@ -58,7 +58,7 @@ const ChildModal = () => {
 							href="#outlined-buttons"
 							color="error"
 						>
-							To Delete
+							Supprimer
 						</Button>
 					</Grid>
 				</Grid>
@@ -80,7 +80,7 @@ const ChildModal = () => {
 							color="error"
 							sx={{ marginRight: "55px" }}
 						>
-							To cancel
+							Annuler
 						</Button>
 					</CreateCategory>
 				</Box>
@@ -119,7 +119,7 @@ const NestedModal = () => {
 						color="error"
 						sx={{ marginRight: "10px" }}
 					>
-						See everything
+						Tout voir
 					</Button>
 					<Button
 						className={classes.ButtonText}
@@ -130,7 +130,7 @@ const NestedModal = () => {
 						color="success"
 						sx={{ marginRight: "10px" }}
 					>
-						Create / Modify category
+						Créer / Modifier une catégorie
 					</Button>
 					<Button
 						className={classes.ButtonText}
@@ -140,7 +140,7 @@ const NestedModal = () => {
 						href="#outlined-buttons"
 						color="secondary"
 					>
-						Manage automatic assignment rule
+						Gérer la règle d'attribution automatique
 					</Button>
 				</Box>
 			</Box>
