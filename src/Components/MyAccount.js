@@ -2,19 +2,23 @@ import React from "react";
 import { Box, Typography, TextField, Button } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import SettingsIcon from "@mui/icons-material/Settings";
-
 const MyAccount = () => {
 	return (
 		<>
 			<Box sx={{ flexGrow: 1 }}>
 				<Grid container spacing={3} pl={3}>
 					<Grid item xs={12} md="auto" align="center">
-						<Typography variant="subtitle1" gutterBottom component="div">
+						<Typography variant="subtitle1" component="div">
 							Research
 						</Typography>
 					</Grid>
 					<Grid item xs={12} md="auto" align="center">
-						<TextField required id="outlined-required" size="small" />
+						<TextField
+							variant="outlined"
+							label="Type here"
+							id="outlined-size-small"
+							size="small"
+						/>
 					</Grid>
 					<Grid item xs={12} md="auto" align="center">
 						<Button variant="contained" href="#outlined-buttons" color="error">

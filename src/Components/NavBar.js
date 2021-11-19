@@ -1,7 +1,7 @@
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
+import { Toolbar } from "@mui/material";
 import IconButton from "@mui/material/IconButton";
 import { makeStyles } from "@mui/styles";
 import SearchIcon from "@mui/icons-material/Search";
@@ -117,76 +117,61 @@ const NavBar2 = () => {
 	);
 
 	return (
-		<Box sx={{ flexGrow: 1 }}>
-			<AppBar position="static" className={classes.AppBarBg}>
-				<Toolbar>
-					<img src={logo} alt="" />
-					<Box sx={{ minWidth: 120, flexGrow: 1 }} ml={4}>
-						{/* <FormControl>
-							<NativeSelect defaultValue={10} className={classes.dropDown}>
-								<option value={10} className={classes.dropDownbg}>
-									Home Page
-								</option>
+		<>
+			<Box sx={{ flexGrow: 1 }}>
+				<AppBar position="static" className={classes.AppBarBg}>
+					<Toolbar>
+						<img src={logo} alt="" />
+						<Box sx={{ minWidth: 120, flexGrow: 1 }} ml={4}>
+							<DropdownButton
+								variant="warning"
+								id="dropdown-basic-button"
+								title="Home"
+							>
+								<Dropdown.Item href="#/action-1">demo1</Dropdown.Item>
+								<Dropdown.Item href="#/action-2">demo2</Dropdown.Item>
+								<Dropdown.Item href="#/action-3">demo3</Dropdown.Item>
+							</DropdownButton>
+						</Box>
 
-								<option value={20} className={classes.dropDownbg}>
-									Ten
-								</option>
-								<option value={30} className={classes.dropDownbg}>
-									Twenty
-								</option>
-								<option value={40} className={classes.dropDownbg}>
-									Thirty
-								</option>
-							</NativeSelect>
-						</FormControl> */}
-						<DropdownButton
-							variant="warning"
-							id="dropdown-basic-button"
-							title="Home"
-						>
-							<Dropdown.Item href="#/action-1">demo1</Dropdown.Item>
-							<Dropdown.Item href="#/action-2">demo2</Dropdown.Item>
-							<Dropdown.Item href="#/action-3">demo3</Dropdown.Item>
-						</DropdownButton>
-					</Box>
-
-					<Box sx={{ flexGrow: 1 }} />
-					<Box sx={{ display: { xs: "none", md: "flex" } }}>
-						<IconButton size="large" color="inherit">
-							<SearchIcon />
-						</IconButton>
-						<IconButton size="large" color="inherit">
-							<NotificationsIcon />
-						</IconButton>
-						<IconButton
-							size="large"
-							edge="end"
-							aria-label="account of current user"
-							aria-controls={menuId}
-							aria-haspopup="true"
-							onClick={handleProfileMenuOpen}
-							color="inherit"
-						>
-							<AccountCircle />
-						</IconButton>
-					</Box>
-					<Box sx={{ display: { xs: "flex", md: "none" } }}>
-						<IconButton
-							size="large"
-							aria-label="show more"
-							aria-controls={mobileMenuId}
-							aria-haspopup="true"
-							onClick={handleMobileMenuOpen}
-							color="inherit"
-						>
-							<MoreIcon />
-						</IconButton>
-					</Box>
-				</Toolbar>
-			</AppBar>
-			{renderMobileMenu}
-			{renderMenu}
-		</Box>
+						<Box sx={{ flexGrow: 1 }} />
+						<Box sx={{ display: { xs: "none", md: "flex" } }}>
+							<IconButton size="large" color="inherit">
+								<SearchIcon />
+							</IconButton>
+							<IconButton size="large" color="inherit">
+								<NotificationsIcon />
+							</IconButton>
+							<IconButton
+								size="large"
+								edge="end"
+								aria-label="account of current user"
+								aria-controls={menuId}
+								aria-haspopup="true"
+								onClick={handleProfileMenuOpen}
+								color="inherit"
+							>
+								<AccountCircle />
+							</IconButton>
+						</Box>
+						<Box sx={{ display: { xs: "flex", md: "none" } }}>
+							<IconButton
+								size="large"
+								aria-label="show more"
+								aria-controls={mobileMenuId}
+								aria-haspopup="true"
+								onClick={handleMobileMenuOpen}
+								color="inherit"
+							>
+								<MoreIcon />
+							</IconButton>
+						</Box>
+					</Toolbar>
+				</AppBar>
+				{renderMobileMenu}
+				{renderMenu}
+			</Box>
+		</>
 	);
 };
 export default NavBar2;
