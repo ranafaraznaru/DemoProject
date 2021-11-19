@@ -14,7 +14,7 @@ const MyAccount = () => {
 						</Typography>
 					</Grid>
 					<Grid item xs={12} md="auto" align="center">
-						<TextField id="filled-basic" label="Type here..." size="small" />
+						<TextField required id="outlined-required" size="small" />
 					</Grid>
 					<Grid item xs={12} md="auto" align="center">
 						<Button variant="contained" href="#outlined-buttons" color="error">
