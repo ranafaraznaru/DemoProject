@@ -21,7 +21,7 @@ const CreateCategory = (props) => {
 						<Grid item xs={3}>
 							<div>
 								<TextField
-									label="Category"
+									label="Catégorie"
 									id="outlined-size-small"
 									size="small"
 								/>
@@ -30,7 +30,7 @@ const CreateCategory = (props) => {
 						<Grid item xs={3}>
 							<div>
 								<TextField
-									label="Sub-category"
+									label="Sous-catégorie"
 									id="outlined-size-small"
 									size="small"
 								/>
@@ -39,7 +39,7 @@ const CreateCategory = (props) => {
 						<Grid item xs={3}>
 							<div>
 								<TextField
-									label="Movement"
+									label="Mouvement"
 									id="outlined-size-small"
 									size="small"
 								/>

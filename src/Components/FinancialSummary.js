@@ -21,7 +21,7 @@ const FinancialSummary = () => {
 				component="div"
 				sx={{ textAlign: "center" }}
 			>
-				Welcome to your financial summary, Alexis.
+				Bienvenue dans votre récapitulatif financier, Alexis.
 			</Typography>
 
 			<Typography
@@ -30,7 +30,7 @@ const FinancialSummary = () => {
 				component="div"
 				sx={{ textAlign: "center" }}
 			>
-				Find out your habits. Manage your money smarter
+				Découvrez vos habitudes. Gérez votre argent plus intelligemment
 			</Typography>
 
 			<Box sx={{ flexGrow: 1 }}>
@@ -92,7 +92,7 @@ const FinancialSummary = () => {
 									color: "#637586",
 								}}
 							>
-								Cash
+								Espèces
 							</Typography>
 							<Typography
 								variant="h6"
@@ -114,7 +114,7 @@ const FinancialSummary = () => {
 								component="div"
 								sx={{ paddingTop: "5px", color: "#637586" }}
 							>
-								Patrimony
+								Patrimoine
 							</Typography>
 							<Typography
 								variant="h6"

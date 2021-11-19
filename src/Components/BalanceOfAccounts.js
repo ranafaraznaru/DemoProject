@@ -28,14 +28,14 @@ const BalanceOfAccounts = () => {
 			<Box>
 				<Box className={classes.accountbalanceData}>
 					<Typography variant="h5" gutterBottom>
-						Balance of Accounts
+						Solde des comptes
 					</Typography>
 					<Typography variant="h5" gutterBottom>
 						2
 					</Typography>
 				</Box>
 				<Box className={classes.accountbalanceData}>
-					<Typography variant="h6">Date of update</Typography>
+					<Typography variant="h6">Date de mise à jour</Typography>
 
 					<Typography variant="h6">7.10.2021</Typography>
 				</Box>
@@ -45,7 +45,7 @@ const BalanceOfAccounts = () => {
 						variant="h6"
 						sx={{ width: "fit-content" }}
 					>
-						ING current account
+						compte courant ING
 					</Typography>
 				</Stack>
 				<Box className={classes.accountbalanceData}>

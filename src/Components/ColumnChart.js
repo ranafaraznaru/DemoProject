@@ -15,7 +15,7 @@ class ColumnChart extends Component {
 					type: "column",
 					dataPoints: [
 						{ label: "Revenus", y: 6000 },
-						{ label: "Expenses", y: 2600 },
+						{ label: "Dépenses", y: 2600 },
 						// { label: "Banana", y: 25 },
 						// { label: "Mango", y: 30 },
 						// { label: "Grape", y: 28 },
