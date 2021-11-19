@@ -4,7 +4,7 @@ import Modal from "@mui/material/Modal";
 import Button from "@mui/material/Button";
 import ManageCategories from "../Components/ManageCategories";
 import CreateCategory from "../Components/CreateCategory";
-import { makeStyles } from "@mui/styles";
+import { makeStyles } from "@material-ui/core/styles";
 
 const style = {
 	position: "absolute",

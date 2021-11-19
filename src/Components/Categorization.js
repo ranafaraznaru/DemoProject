@@ -132,7 +132,7 @@ const Categorization = () => {
 							Number of categories
 						</Typography>
 					</Grid>
-				</Grid>
+				</Grid> 
 			</Box>
 			<Box sx={{ display: "flex", justifyContent: "space-between" }} py={3}>
 				<Box>

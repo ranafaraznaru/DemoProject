@@ -20,7 +20,7 @@ export default function ResponsiveDialog() {
 
 	return (
 		<div>
-			<Button variant="outlined" onClick={handleClickOpen}>
+			<Button variant="contained" onClick={handleClickOpen}>
 				Add
 			</Button>
 			<Dialog

@@ -10,8 +10,8 @@ import CurrentAccount from "./CurrentAccount";
 import { Routes, Route } from "react-router-dom";
 import ManageCategories from "../Components/ManageCategories";
 import FinancialSummary from "../Components/FinancialSummary";
-import AddModal from "./AddModal";
-import SettingModal from "../Components/SettingModal";
+// import AddModal from "./AddModal";
+// import SettingModal from "../Components/SettingModal";
 // import AddAccounts from "./AddAccounts";
 // import DisplayOptions from "./DisplayOptions";
 const App = () => {
@@ -20,8 +20,8 @@ const App = () => {
 			<NavBar />
 			{/* <AddAccounts /> */}
 			{/* <DisplayOptions /> */}
-			<AddModal />
-			<SettingModal />
+			{/* <AddModal /> */}
+			{/* <SettingModal /> */}
 			{/* <CategorizationTable /> */}
 			<div style={{ backgroundColor: "#f5f5f5", minHeight: "100vh" }}>
 				<ThemeProvider theme={theme}>

@@ -1,7 +1,10 @@
 import React from "react";
 import { Box, Typography, TextField, Button } from "@mui/material";
 import Grid from "@mui/material/Grid";
-import SettingsIcon from "@mui/icons-material/Settings";
+// import SettingsIcon from "@mui/icons-material/Settings";
+import AddModal from "./AddModal";
+import SettingModal from "../Components/SettingModal";
+
 const MyAccount = () => {
 	return (
 		<>
@@ -35,8 +38,8 @@ const MyAccount = () => {
 						</Typography>
 					</Grid>
 					<Grid item xs={12} md={3}>
-						<Button variant="contained" sx={{ marginLeft: "8px" }}>
-							Add
+						<Button>
+							<AddModal />
 						</Button>
 						<Button
 							variant="contained"
@@ -46,7 +49,8 @@ const MyAccount = () => {
 							To Delete
 						</Button>
 						<Button>
-							<SettingsIcon />
+							{/* <SettingsIcon /> */}
+							<SettingModal />
 						</Button>
 					</Grid>
 				</Grid>

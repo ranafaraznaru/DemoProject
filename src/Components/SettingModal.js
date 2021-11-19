@@ -5,6 +5,8 @@ import DialogTitle from "@mui/material/DialogTitle";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 import DisplayOptions from "./DisplayOptions";
+import SettingsIcon from "@mui/icons-material/Settings";
+
 export default function ResponsiveDialog() {
 	const [open, setOpen] = React.useState(false);
 	const theme = useTheme();
@@ -20,9 +22,8 @@ export default function ResponsiveDialog() {
 
 	return (
 		<div>
-			<Button variant="outlined" onClick={handleClickOpen}>
-				Setting
-			</Button>
+			<SettingsIcon onClick={handleClickOpen} />
+
 			<Dialog
 				fullScreen={fullScreen}
 				open={open}
