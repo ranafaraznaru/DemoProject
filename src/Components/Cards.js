@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Grid, Card, CardContent, Typography } from "@mui/material";
-import { makeStyles } from "@mui/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import { Link } from "react-router-dom";
 const useStyles = makeStyles((theme) => ({
 	CardsHover: {
